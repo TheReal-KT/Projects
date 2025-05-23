@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoinX - Gain value out of EFTs and NFTs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen bg-black text-white">
+    <!-- Header with acrylic effect -->
+    <header class="sticky top-0 z-50 w-full acrylic bg-white/10 border-b border-white/20 shadow-sm">
+        <div class="container mx-auto px-4 flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <a href="#" class="flex items-center space-x-2">
+                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="2"/>
+                        <path d="M9 8H15M9 12H15M9 16H13" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span class="font-bold text-xl">CoinX</span>
+                </a>
+            </div>
+
+            <!-- Navigation in the middle -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#" class="text-sm font-medium hover:text-gray-300 transition-colors">Product</a>
+                <a href="#" class="text-sm font-medium hover:text-gray-300 transition-colors">Features</a>
+                <a href="#" class="text-sm font-medium hover:text-gray-300 transition-colors">Pricing</a>
+                <a href="#" class="text-sm font-medium hover:text-gray-300 transition-colors">Resources</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <!-- Dark mode toggle -->
+                <button class="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                    </svg>
+                </button>
+
+                <a href="#" class="hidden md:inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-black bg-white rounded-full hover:bg-gray-200 transition-colors">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative hero-bg">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70"></div>
+            
+            <div class="container mx-auto px-4 pt-24 pb-16 relative z-10">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white">
+                        Gain value out of EFTs and NFTs
+                    </h1>
+
+                    <p class="text-lg mb-8 text-gray-300">
+                        Our app is now available on the App Store and Play Store. Download the upcoming wallet to manage your digital assets efficiently and securely.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+                        <a href="#" class="flex items-center space-x-2 px-6 py-3 bg-white text-black rounded-lg hover:bg-gray-200 transition-colors">
+                            <!-- App Store Icon -->
+                            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.5564 12.4835C17.5564 9.71819 19.7959 8.39166 19.8795 8.34269C18.6631 6.53483 16.7816 6.27322 16.1211 6.25077C14.4684 6.07855 12.8719 7.25138 12.0292 7.25138C11.1672 7.25138 9.84066 6.27322 8.44949 6.30693C6.66408 6.34064 5.00743 7.36566 4.09426 8.94968C2.19032 12.1768 3.61038 17.0362 5.43467 19.7565C6.35909 21.0831 7.44949 22.5807 8.87081 22.5245C10.2537 22.4683 10.7879 21.6256 12.4591 21.6256C14.1116 21.6256 14.6084 22.5245 16.0484 22.4908C17.5339 22.4683 18.4658 21.1417 19.3527 19.8039C20.4056 18.2648 20.8286 16.7672 20.8511 16.6885C20.8174 16.6772 17.5676 15.4031 17.5564 12.4835Z"/>
+                                <path d="M15.0446 4.33576C15.7951 3.40013 16.2968 2.12673 16.1493 0.830566C15.0558 0.875021 13.7067 1.56665 12.9337 2.47982C12.2407 3.29363 11.6314 4.61891 11.8014 5.86986C13.0178 5.95654 14.2716 5.26491 15.0446 4.33576Z"/>
+                            </svg>
+                            <span>App Store</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-2 px-6 py-3 bg-white text-black rounded-lg hover:bg-gray-200 transition-colors">
+                            <!-- Play Store Icon -->
+                            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3.60001 2.40002C3.40001 2.60002 3.30001 2.80002 3.30001 3.10002V20.9C3.30001 21.2 3.40001 21.4 3.60001 21.6L3.70001 21.7L13.4 12L3.60001 2.40002Z"/>
+                                <path d="M17.5 16.1L13.5 13.9V10.1L17.5 7.90002C17.7 7.80002 18 7.80002 18.2 7.90002L21.8 9.90002C22.2 10.1 22.5 10.5 22.5 11V13C22.5 13.5 22.2 13.9 21.8 14.1L18.2 16.1C18 16.2 17.7 16.2 17.5 16.1Z"/>
+                                <path d="M17 7.50002L7.09999 2.20002C6.89999 2.10002 6.69999 2.00002 6.39999 2.00002C6.19999 2.00002 5.99999 2.10002 5.79999 2.20002L5.89999 2.30002L15.6 12L17 7.50002Z"/>
+                                <path d="M7.10001 21.8L17 16.5L15.6 12L5.90001 21.7L6.40001 21.9C6.60001 22 6.80001 22 7.10001 22C7.30001 22 7.50001 21.9 7.70001 21.8H7.10001Z"/>
+                            </svg>
+                            <span>Play Store</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market Value Section -->
+        <section class="py-12 bg-black-900">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="mb-8">
+                        <h3 class="text-lg text-gray-400 mb-2">CoinX Market Value</h3>
+                        <div class="flex items-baseline">
+                            <span class="text-4xl font-bold mr-3">$12.50</span>
+                            <span class="text-green-500 font-medium">+5.2%</span>
+                        </div>
+                    </div>
+
+                    <!-- Chart Container -->
+                    <div class="h-64 bg-black-800 rounded-lg overflow-hidden relative">
+                        <!-- Animated SVG chart -->
+                        <svg class="w-full h-full" viewBox="0 0 800 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="chart-line" d="M0,150 C50,120 100,180 150,150 C200,120 250,180 300,150 C350,120 400,180 450,150 C500,80 550,220 600,150 C650,120 700,180 750,150 C800,120 850,180 900,150" stroke="white" stroke-width="3" fill="transparent"/>
+                        </svg>
+
+                        <!-- Month labels -->
+                        <div class="absolute bottom-0 left-0 right-0 flex justify-between px-4 pb-2 text-xs text-gray-500">
+                            <span>Jan</span>
+                            <span>Feb</span>
+                            <span>Mar</span>
+                            <span>Apr</span>
+                            <span>May</span>
+                            <span>Jun</span>
+                            <span>Jul</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <a href="#" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-black bg-white rounded-full hover:bg-gray-200 transition-colors">
+                            Buy CoinX
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-8 bg-black border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-sm font-medium mb-4">About Us</h4>
+                </div>
+                <div>
+                    <h4 class="text-sm font-medium mb-4">Contact</h4>
+                </div>
+                <div>
+                    <h4 class="text-sm font-medium mb-4">Privacy Policy</h4>
+                </div>
+                <div>
+                    <h4 class="text-sm font-medium mb-4">Terms of Service</h4>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
+                © 2024 CoinX. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="script.js">
+    </script>
+</body>
+</html>
